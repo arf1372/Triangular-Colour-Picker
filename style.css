@@ -1,0 +1,43 @@
+.colour-wheel {
+    height: 300px;
+    width: 300px;
+    position: relative;
+
+    background-image: conic-gradient(hsl(360, 100%, 50%),
+            hsl(315, 100%, 50%),
+            hsl(270, 100%, 50%),
+            hsl(225, 100%, 50%),
+            hsl(180, 100%, 50%),
+            hsl(135, 100%, 50%),
+            hsl(90, 100%, 50%),
+            hsl(45, 100%, 50%),
+            hsl(0, 100%, 50%));
+
+    border-radius: 50%;
+}
+
+.colour-wheel::after {
+    display: block;
+    content: "";
+    position: absolute;
+    inset: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.lightness,
+.saturation {
+    width: 300px;
+    height: 300px;
+}
+
+.lightness {
+    background: linear-gradient(hsl(0, 100%, 50%),
+            hsl(0, 0%, 0%));
+}
+
+/* 
+.saturation {
+    background: linear-gradient(90deg, hsl(0, 100%, 50%), hsl(0, 0%, 50%));
+    mix-blend-mode: saturation;
+} */
