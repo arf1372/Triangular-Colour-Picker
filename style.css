@@ -29,15 +29,15 @@
 .saturation {
     width: 300px;
     height: 300px;
+    transform-origin: center;
+    transform: perspective();
 }
 
 .lightness {
-    background: linear-gradient(hsl(0, 100%, 50%),
+    background: linear-gradient(90deg, hsl(0, 0%, 100%),
             hsl(0, 0%, 0%));
 }
 
-/* 
 .saturation {
-    background: linear-gradient(90deg, hsl(0, 100%, 50%), hsl(0, 0%, 50%));
-    mix-blend-mode: saturation;
-} */
+    background: linear-gradient(180deg, hsl(0, 100%, 50%), hsla(0, 0%, 50%, 0));
+}
