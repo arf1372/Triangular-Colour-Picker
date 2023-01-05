@@ -3,15 +3,15 @@
     width: 300px;
     position: relative;
 
-    background-image: conic-gradient(hsl(360, 100%, 50%),
-            hsl(315, 100%, 50%),
-            hsl(270, 100%, 50%),
-            hsl(225, 100%, 50%),
-            hsl(180, 100%, 50%),
-            hsl(135, 100%, 50%),
-            hsl(90, 100%, 50%),
+    background-image: conic-gradient(hsl(0, 100%, 50%),
             hsl(45, 100%, 50%),
-            hsl(0, 100%, 50%));
+            hsl(90, 100%, 50%),
+            hsl(135, 100%, 50%),
+            hsl(180, 100%, 50%),
+            hsl(225, 100%, 50%),
+            hsl(270, 100%, 50%),
+            hsl(315, 100%, 50%),
+            hsl(360, 100%, 50%));
 
     border-radius: 50%;
 }
@@ -29,8 +29,16 @@
 .saturation {
     width: 300px;
     height: 300px;
+}
+
+.picker {
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    height: 300px;
+    position: relative;
     transform-origin: center;
-    transform: perspective();
+    /* rotate: 30deg; */
 }
 
 .lightness {
@@ -40,4 +48,5 @@
 
 .saturation {
     background: linear-gradient(180deg, hsl(0, 100%, 50%), hsla(0, 0%, 50%, 0));
+    /* mix-blend-mode: overlay; */
 }
